@@ -1,0 +1,76 @@
+/* 
+
+These comments can span multiple lines
+
+
+*/
+
+/* 
+
+list of CSS selectors:
+                - Element Selectors: is going to select all instances of the given tag form our HTML page.
+                    - body
+                    - p
+                
+
+*/
+
+p,
+h1 {
+  /* Select all <p> tags */
+  /* By using a comma, I can have this style effect multiple different tags at the same time */
+
+  /* Property: value ; */
+
+  color: orangered;
+  background-color: rebeccapurple;
+}
+
+body {
+  background-color: rgb(50, 140, 60);
+
+  /* In CSS we have 3 major ways to refer to a color
+  
+        - color keywords
+                - green, blue, rebeccapurple
+        - RGB value
+            - rgb(0-255, 0-255, 0-255)
+            - each number represents red, blue, green strength
+        - hex code
+            - #ffffff (white)
+            */
+}
+
+/* classes are accessed with the "." followed by the class name 
+    - useful for targeting multiple elements
+    */
+
+.header {
+  color: blue;
+  background-color: pink;
+}
+
+.btn {
+  text-decoration: none;
+  border: 2px solid yellow;
+  background-color: beige;
+  border-radius: 10px;
+}
+
+nav .btn {
+  text-shadow: 1px 1px 5px black;
+}
+
+nav > .btn {
+  background-color: aquamarine;
+}
+/* 
+     IDs are accessed with the "#" symbol, followed by the id name.
+        - For targeting a single element
+*/
+#unique {
+  text-decoration: underline overline;
+  background-color: steelblue;
+  color: lightblue;
+  border-radius: 25px;
+}
