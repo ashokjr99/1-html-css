@@ -28,4 +28,65 @@ nav {
 .article-preview img {
   width: 250px;
   height: 250px;
+  object-fit: cover;
+}
+.navlink {
+  text-decoration: none;
+  color: white;
+}
+
+.c {
+  width: 200px;
+  height: 100px;
+  min-height: 100px;
+  min-width: 200px;
+}
+.c1 {
+  border: 2px solid red;
+}
+.c2 {
+  border: 2px solid blueviolet;
+}
+.c3 {
+  border: 2px solid orange;
+  /* align-self: end; BUT wrap must be off */
+}
+.c4 {
+  border: 2px solid magenta;
+}
+.c5 {
+  border: 2px solid chocolate;
+}
+
+.main-container {
+  display: flex;
+  margin-top: 3em;
+  border: 2px solid black;
+  width: 100vw;
+  /* flex-direction: column; */
+  /* If we use row (default), we can have a new row appear with flex-wrap, respecting the width and height of it's container */
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: start; */
+  /* Handles the white space on flex items that are wrapped within a constrained parent, (Need extra room to see effect) */
+  height: 700px;
+  align-content: center;
+  /* Gap between each individual flex items */
+  gap: 1em;
+}
+
+.article-preview {
+  margin-top: 1em;
+  width: 100vw;
+  display: flex;
+  /* Test out flex wrap */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6em;
+  flex-direction: row-reverse;
+}
+
+.article-preview .text {
+  max-width: 400px;
 }
