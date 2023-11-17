@@ -1,0 +1,107 @@
+/* Media Queries */
+
+/* 
+    Common units of measurement:
+        - Percentages: %
+        - Viewport Width: vw
+        - Viewport Height: vh
+        - Root element font size: rem
+        - Parent font size: em
+
+    Using Media Queries
+
+        ex:
+            @media screen { <------ target screens only
+                
+                div { <---- element to adjust
+
+                    background-color: blue;
+            }
+            
+
+         AND @media screen and (min-width: 750px){
+            
+            ***element here***
+            }
+
+         OR
+            @media screen, (min-width: 750px) {
+                ...
+            }
+        Build with Mobile first concept!
+
+
+*/
+
+/* @media (max-width: 480px) {
+  body {
+    background-color: darkred;
+  }
+ } */
+
+/* 
+?Challenge Solution 
+*/
+
+/* @media screen and (max-width: 740px) and (orientation: landscape) { */
+/* Easy way to test if query works
+  
+  body {
+    background: red;
+
+  } */
+
+/* nav ul li {
+    font-size: 1.3em;
+  }
+
+  footer {
+    padding-bottom: 2em;
+    font-size: 1.2em;
+  }
+} */
+
+/* 
+? Challenge 2 solution
+ */
+
+/* @media screen and (max-width: 375px) {
+  nav ul li {
+    display: none;
+  }
+  header {
+    height: 20em;
+  }
+} */
+
+@media screen and (max-width: 480px) {
+  /* global */
+  p {
+    font-size: 16pt;
+  }
+  /* header */
+  nav ul {
+    padding: 0;
+  }
+  nav ul li {
+    font-size: x-large;
+  }
+  /* menu */
+
+  .item-desc {
+    width: 100vw;
+  }
+  .desc {
+    flex-direction: column;
+    align-items: center;
+  }
+  .desc > p {
+    padding: 1rem 3rem;
+  }
+  /* footer */
+
+  footer {
+    font-size: x-large;
+    padding-bottom: 1em;
+  }
+}
